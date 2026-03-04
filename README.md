@@ -107,7 +107,7 @@ python3 analyze_pgn.py games/2026-03-03-comeback-vs-gaju33333.pgn \
 - Core:
   - `--pov-player`, `--output-md`, `--max-seconds`, `--threads`, `--hash-mb`
 - Swing extraction:
-  - `--swing-threshold-score` (default `0.15`)
+  - `--swing-threshold-score` (default `0.20`)
   - `--swing-max-events` (default `8`)
   - `--swing-scope both|pov|opponent` (default `both`)
 - Forensic evidence:

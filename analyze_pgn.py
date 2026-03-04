@@ -27,7 +27,7 @@ MOVE_COL_WIDTH = 6
 EVAL_COL_WIDTH = 7
 PCT_COL_WIDTH = 5
 DEFAULT_ANALYSIS_DIR = "analysis"
-DEFAULT_SWING_THRESHOLD_SCORE = 0.15
+DEFAULT_SWING_THRESHOLD_SCORE = 0.20
 DEFAULT_SWING_MAX_EVENTS = 8
 DEFAULT_SWING_SCOPE = "both"
 DEFAULT_CAUSE_MODE = "forensic"
@@ -390,11 +390,27 @@ def should_track_swing(swing_scope, mover_is_pov):
 
 
 def swing_severity(abs_delta):
-    if abs_delta >= 0.30:
+    if abs_delta >= 0.50:
         return "Critical"
     if abs_delta >= 0.20:
         return "Major"
     return "Notable"
+
+
+def select_swing_events(swing_events, swing_max_events):
+    if swing_max_events <= 0:
+        return []
+    ranked = sorted(swing_events, key=lambda event: (-abs(event["delta"]), event["ply"]))
+    top_events = ranked[:swing_max_events]
+    return sorted(top_events, key=lambda event: event["ply"])
+
+
+def swing_polarity_label(delta_points):
+    if delta_points > 0:
+        return "positive"
+    if delta_points < 0:
+        return "negative"
+    return "neutral"
 
 
 def captured_piece_type(board_before, move):
@@ -1007,15 +1023,34 @@ def render_significant_swings(
         print("- No swings met the configured threshold.", file=out, flush=True)
         return
 
-    ranked = sorted(swing_events, key=lambda event: (-abs(event["delta"]), event["ply"]))
-    for event in ranked[:swing_max_events]:
+    selected_events = select_swing_events(swing_events, swing_max_events)
+    good_events = [event for event in selected_events if event["delta"] > 0]
+    bad_events = [event for event in selected_events if event["delta"] < 0]
+    neutral_events = [event for event in selected_events if event["delta"] == 0]
+    event_groups = [
+        ("Good (+me / -op.)", good_events),
+        ("Bad (-me / +op.)", bad_events),
+        ("Neutral", neutral_events),
+    ]
+
+    def render_event(event):
         delta_points = event["delta"] * 100.0
         sign = "+" if delta_points >= 0 else ""
+        me_delta = delta_points
+        op_delta = -delta_points
         print(
             (
                 f"- [{event['severity']}] {event['prefix']} {event['san']} ({event['turn_label']}): "
                 f"expected score {event['before_score']:.2f} -> {event['after_score']:.2f} "
                 f"({sign}{delta_points:.1f} pts), eval {event['before_eval']} -> {event['after_eval']}"
+            ),
+            file=out,
+            flush=True,
+        )
+        print(
+            (
+                f"  Impact: me={swing_polarity_label(me_delta)} ({me_delta:+.1f} pts), "
+                f"op.={swing_polarity_label(op_delta)} ({op_delta:+.1f} pts)"
             ),
             file=out,
             flush=True,
@@ -1051,15 +1086,26 @@ def render_significant_swings(
                 )
             print(f"  Cause: {forensic['cause']}", file=out, flush=True)
             print(f"  Lesson: {forensic['lesson']}", file=out, flush=True)
-            continue
+        else:
+            if event.get("forensic_error"):
+                print(
+                    f"  Cause: forensic analysis failed ({event['forensic_error']}). Falling back to heuristic.",
+                    file=out,
+                    flush=True,
+                )
+            print(f"  Cause: {event['reason']}", file=out, flush=True)
 
-        if event.get("forensic_error"):
-            print(
-                f"  Cause: forensic analysis failed ({event['forensic_error']}). Falling back to heuristic.",
-                file=out,
-                flush=True,
-            )
-        print(f"  Cause: {event['reason']}", file=out, flush=True)
+    rendered_any_group = False
+    for heading, grouped_events in event_groups:
+        if not grouped_events:
+            continue
+        print("", file=out, flush=True)
+        print(f"### {heading}", file=out, flush=True)
+        for index, event in enumerate(grouped_events):
+            render_event(event)
+            if index < len(grouped_events) - 1:
+                print("", file=out, flush=True)
+        rendered_any_group = True
 
 
 def validate_forensic_stack(cause_mode, lc0_path, lc0_weights):
@@ -1330,8 +1376,7 @@ def main(
                 "llama_temperature": float(llama_temperature),
             }
 
-            ranked = sorted(swing_events, key=lambda event: (-abs(event["delta"]), event["ply"]))
-            target_events = ranked[:swing_max_events]
+            target_events = select_swing_events(swing_events, swing_max_events)
             phase_start = time.perf_counter()
             log(
                 f"Starting forensic phase: events={len(target_events)}/{len(swing_events)}, "
@@ -1463,7 +1508,7 @@ if __name__ == "__main__":
         type=float,
         default=DEFAULT_SWING_THRESHOLD_SCORE,
         help=(
-            "Significant swing threshold in expected-score units (0.15 = 15 pts); "
+            "Significant swing threshold in expected-score units (0.20 = 20 pts); "
             f"default: {DEFAULT_SWING_THRESHOLD_SCORE}"
         ),
     )
