@@ -27,6 +27,8 @@ This is an engineering project, not only a game archive: it automates chess fore
 ### Engineering Signals
 - End-to-end pipeline:
   - `games/*.pgn` input to `analysis/*.md` output with a stable report structure.
+- Modular analyzer internals:
+  - `pgn_analyzer/` now separates constants, engine control, forensic logic, pipeline flow, and CLI parsing while preserving `python3 analyze_pgn.py ...` usage.
 - Multi-runtime orchestration:
   - Integrates local binaries (`stockfish`, `lc0`, `ollama`, `llama-cli`) with explicit flags and auto-detection.
 - Resilience:

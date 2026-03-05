@@ -1,0 +1,1 @@
+"""PGN analyzer package."""
