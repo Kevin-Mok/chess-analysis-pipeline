@@ -162,10 +162,12 @@ Current `analysis/*.md` artifacts include a high-confidence conversion sequence 
   - [Chess.com game: 2026-02-27](https://www.chess.com/game/live/165298129986?move=0)
   - [Chess.com analysis: 2026-02-27](https://www.chess.com/analysis/game/live/165298129986/analysis)
   - [Lichess game: 2026-03-03](https://lichess.org/nujVa4n7)
+  - [Lichess game: 2026-03-06](https://lichess.org/jdooSl0M)
   - [Lichess study chapter: 2026-03-03](https://lichess.org/study/9tKdUwCn/7y3AQeFe)
 - Local artifacts:
   - [analysis/2026-02-27-fast-checkmate.md](analysis/2026-02-27-fast-checkmate.md)
   - [analysis/2026-03-03-comeback-vs-gaju33333.md](analysis/2026-03-03-comeback-vs-gaju33333.md)
+  - [analysis/3.6-tough.md](analysis/3.6-tough.md)
 
 ## How to View the Games
 - Open PGNs from `games/*.pgn` in Chess.com, Lichess, or any local PGN viewer.
