@@ -6,29 +6,19 @@ Purpose: maintain five recruiter-focused GitHub repository ideas that extend thi
 `ai-chess-pgn-swing-forensics`
 
 About:
-Local-first ai-chess-analysis-pipeline for PGN swing forensics with stockfish-lc0 cross-checks and reproducible markdown reports.
+Local-first ai-chess-analysis-pipeline for PGN swing forensics with Stockfish/Lc0 cross-checks and reproducible markdown reports.
 
-README:
-`# ai-chess-pgn-swing-forensics`
-`## Why this stands out to SWE recruiters`
-`## Architecture (PGN parser, engine adapters, report writer)`
-`## Local stack setup (Stockfish, Lc0, optional LLM)`
-`## CLI usage and reproducible outputs`
-`## Failure-mode tests and fallback behavior`
+SWE recruiter signal:
+Shows strong data-pipeline design, deterministic analysis workflows, and evidence-backed reporting.
 
 ## 2) Title
 `ai-chess-engine-disagreement-tracker`
 
 About:
-Move-level engine-disagreement-analytics that turns stockfish-vs-lc0 deltas into weekly decision-quality signals.
+Move-level engine-disagreement-analytics that turns Stockfish-vs-Lc0 deltas into weekly decision-quality trends and review queues.
 
-README:
-`# ai-chess-engine-disagreement-tracker`
-`## Recruiter value: measurable decision-quality analytics`
-`## Data model for move-level disagreement`
-`## Batch pipeline and scoring rules`
-`## Visualization examples`
-`## Validation and regression checks`
+SWE recruiter signal:
+Demonstrates metrics design, batch processing, and practical observability for model disagreement analysis.
 
 ## 3) Title
 `ai-chess-coach-llm`
@@ -36,13 +26,8 @@ README:
 About:
 Deterministic chess-forensics-core with optional local-llm-coaching rewrite, strict schema validation, and safe fallback behavior.
 
-README:
-`# ai-chess-coach-llm`
-`## What recruiters can evaluate quickly`
-`## Deterministic forensic core`
-`## Optional local rewrite backends`
-`## Prompt contract and JSON validation`
-`## End-to-end examples`
+SWE recruiter signal:
+Highlights AI integration discipline, schema enforcement, and graceful degradation under runtime failures.
 
 ## 4) Title
 `ai-chess-pgn-analysis-ci-bench`
@@ -50,13 +35,8 @@ README:
 About:
 CI-ready pgn-analysis-benchmark harness that detects output drift, enforces reproducibility gates, and tracks latency trends.
 
-README:
-`# ai-chess-pgn-analysis-ci-bench`
-`## Recruiter-facing engineering outcomes`
-`## Benchmark corpus and golden outputs`
-`## Performance and drift metrics`
-`## CI policy and quality gates`
-`## Debug workflow for regressions`
+SWE recruiter signal:
+Shows testing rigor, benchmark design, and release-quality thinking around regression prevention.
 
 ## 5) Title
 `ai-chess-rapid-comeback-dataset`
@@ -64,10 +44,5 @@ README:
 About:
 High-volatility chess-comeback-dataset pipeline with SAN evidence labels, clean exports, and model-eval-ready artifacts.
 
-README:
-`# ai-chess-rapid-comeback-dataset`
-`## Why recruiters care about this dataset project`
-`## Label schema and evidence requirements`
-`## Ingestion and normalization pipeline`
-`## Export formats and usage examples`
-`## Data quality checks`
+SWE recruiter signal:
+Demonstrates dataset engineering, labeling discipline, and reproducible export design for downstream evaluation.

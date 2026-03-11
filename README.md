@@ -131,12 +131,14 @@ Current artifacts highlight tactical conversion and practical game management un
 
 - Fast tactical finish in `2026-02-27-fast-checkmate`.
 - Conversion sequence in `2026-03-03-comeback-vs-gaju33333` ending in a decisive queen trade.
+- Tense, drawn-out 76-move win vs `NickGen_Eral` with 88% accuracy maintained deep into the endgame.
 
 ## Highlight Games
 | Date | Opponent | Platform | Result | Game Link | Why it matters |
 | --- | --- | --- | --- | --- | --- |
 | 2026-02-27 | Woaheee | Chess.com | Win (White, 1-0) | [Chess.com game](https://www.chess.com/game/live/165298129986?move=0) | Fast tactical finish ending with `15. Qxe7#`. |
 | 2026-03-03 | gaju33333 | Lichess | Win (Black, 0-1) | [Lichess game](https://lichess.org/nujVa4n7) | Clean conversion featuring `18...Nxb2` and `34...Qxc7`. |
+| 2026-03-11 | NickGen_Eral | Lichess | Win (White, 1-0) | [Lichess game](https://lichess.org/lY26zNo7) | Long 76-move win with 88% accuracy, showing steady practical play deep into a drawn-out endgame. |
 
 ## Key Moves and Turning Points
 - [**15. Qxe7#** (Chess.com analysis)](https://www.chess.com/analysis/game/live/165298129986/analysis?move=29): immediate checkmate conversion.
