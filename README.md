@@ -132,6 +132,7 @@ bash scripts/test_play_well_live.sh
 Current win artifacts are highlighted from tracked PGNs plus the `## How The Game Was Won` summaries in `analysis/*.md`.
 
 - Fast tactical finish vs `Woaheee`, where `14...Nxf1` allowed `15. Qxe7#` immediately.
+- Comeback mate vs `Ironmike3982` on Chess.com, where `15. Bf2` dropped the rook but the attack still finished with `27. Qh5#` about ten moves later.
 - Conversion win vs `gaju33333`, ending with `34...Qxc7` and an immediate resignation.
 - Practical resignation win vs `AmeerIrfan`, where `40. Rc2` ended a volatile tactical race.
 - Back-rank mate win as Black vs `juliok22`, finishing a compact tactical game with `26...Re1#`.
@@ -147,9 +148,11 @@ Current win artifacts are highlighted from tracked PGNs plus the `## How The Gam
 | 2026-03-11 | juliok22 | Chess.com | Win (Black, 0-1) | [Chess.com game](https://www.chess.com/game/live/165814123450) | Compact back-rank mate highlight via `26...Re1#`. |
 | 2026-03-11 | NickGen_Eral | Lichess | Win (White, 1-0) | [Lichess game](https://lichess.org/lY26zNo7) | Long 76-move endgame win capped by `76. Qfh4#`. |
 | 2026-03-13 | Abhijeetnegi123 | Chess.com | Win (White, 1-0) | [Chess.com game](https://www.chess.com/game/live/165901228132) | Short tactical finish where `13...Nxc2` allowed `14. Qxf7#`. |
+| 2026-03-15 | Ironmike3982 | Chess.com | Win (White, 1-0) | [Chess.com review](https://www.chess.com/analysis/game/live/165995086288/review?move=29&move=29&tab=review&classification=greatfind&autorun=true) | Comeback mate where `15. Bf2` lost the rook but the attack still converted with `27. Qh5#`. |
 
 ## Key Moves and Turning Points
 - [**15. Qxe7#** (Chess.com analysis)](https://www.chess.com/analysis/game/live/165298129986/analysis?move=29): immediate mate after `14...Nxf1`.
+- [**27. Qh5#** (Chess.com review)](https://www.chess.com/analysis/game/live/165995086288/review?move=29&move=29&tab=review&classification=greatfind&autorun=true): `SoloPistol` finished the comeback against `Ironmike3982` after `15. Bf2` allowed `...Bxa1`.
 - [**34...Qxc7** (Lichess)](https://lichess.org/nujVa4n7#68): decisive queen trade that ended the comeback win by resignation.
 - [**40. Rc2** (Lichess)](https://lichess.org/jdooSl0M): final practical move before Black resigned in the `AmeerIrfan` game.
 - [**26...Re1#** (Chess.com game)](https://www.chess.com/game/live/165814123450): clean back-rank mate to finish a compact tactical win.
@@ -168,6 +171,10 @@ Current `analysis/*.md` artifacts include a high-confidence conversion sequence 
 - Shows a clear conversion path from already-strong winning chances to a fully winning final position.
 - Keeps the section evidence-backed with explicit values derived from current analysis artifacts.
 
+### Tactical Comeback Mate
+- [analysis/3.15-comeback-mate.md](analysis/3.15-comeback-mate.md) captures a different comeback arc: `15. Bf2` allowed `15...Bxa1`, but the attack rebuilt into a forced mating net that finished with `27. Qh5#`.
+- The same artifact shows the position had already flipped to a forced mate by `22...Bxg5`, so the rook loss did not stop the attack from converting.
+
 ## Study/Analysis Links
 - Game sources:
   - [Chess.com game: 2026-02-27](https://www.chess.com/game/live/165298129986?move=0)
@@ -178,9 +185,11 @@ Current `analysis/*.md` artifacts include a high-confidence conversion sequence 
   - [Lichess game: 2026-03-11](https://lichess.org/lY26zNo7)
   - [Chess.com game: 2026-03-13](https://www.chess.com/game/live/165901228132)
   - [Chess.com analysis: 2026-03-13](https://www.chess.com/analysis/game/live/165901228132/analysis?move=23)
+  - [Chess.com review: 2026-03-15](https://www.chess.com/analysis/game/live/165995086288/review?move=29&move=29&tab=review&classification=greatfind&autorun=true)
   - [Lichess study chapter: 2026-03-03](https://lichess.org/study/9tKdUwCn/7y3AQeFe)
 - Local artifacts:
   - [analysis/2026-02-27-fast-checkmate.md](analysis/2026-02-27-fast-checkmate.md)
+  - [analysis/3.15-comeback-mate.md](analysis/3.15-comeback-mate.md)
   - [analysis/2026-03-03-comeback-vs-gaju33333.md](analysis/2026-03-03-comeback-vs-gaju33333.md)
   - [analysis/3.6-tough.md](analysis/3.6-tough.md)
   - [analysis/3.11-back-rank-mate.md](analysis/3.11-back-rank-mate.md)

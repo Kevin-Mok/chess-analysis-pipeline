@@ -1,0 +1,58 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.03.15"]
+[Round "-"]
+[White "SoloPistol"]
+[Black "Ironmike3982"]
+[Result "1-0"]
+[CurrentPosition "4rr2/3b3k/1p1p4/p1pP1p1Q/1qB5/1P4RP/P1P2BP1/6K1 b - - 2 27"]
+[Timezone "UTC"]
+[ECO "C43"]
+[ECOUrl "https://www.chess.com/openings/Petrovs-Defense-Steinitz-Attack"]
+[UTCDate "2026.03.15"]
+[UTCTime "21:01:07"]
+[WhiteElo "415"]
+[BlackElo "401"]
+[TimeControl "600"]
+[Termination "SoloPistol won by checkmate"]
+[StartTime "21:01:07"]
+[EndDate "2026.03.15"]
+[EndTime "21:10:22"]
+[Link "https://www.chess.com/analysis/game/live/165995086288/review?move=29&move=29&tab=review&classification=greatfind&autorun=true"]
+[WhiteUrl "https://images.chesscomfiles.com/uploads/v1/user/530287979.a9a8a530.50x50o.fb8c76af6660.jpg"]
+[WhiteCountry "3"]
+[WhiteTitle ""]
+[BlackUrl "https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif"]
+[BlackCountry "54"]
+[BlackTitle ""]
+
+1. e4 {[%clk 0:09:59.2]} 1... e5 {[%clk 0:09:58.3]} 2. Nf3 {[%clk 0:09:54.7]}
+2... Nf6 {[%clk 0:09:56.5]} 3. d4 {[%clk 0:09:48.4]} 3... Nc6 {[%clk 0:09:53.8]}
+4. Nc3 {[%clk 0:09:43.4]} 4... Bd6 {[%clk 0:09:48.4]} 5. Be3 {[%clk 0:09:34.7]}
+5... exd4 {[%clk 0:09:46.3]} 6. Nxd4 {[%clk 0:09:28.2]} 6... Nxd4 {[%clk
+0:09:41.3]} 7. Bxd4 {[%clk 0:09:26.2]} 7... c5 {[%clk 0:09:21.5]} 8. Be3 {[%clk
+0:09:12.4]} 8... Qb6 {[%clk 0:09:10.6]} 9. b3 {[%clk 0:09:05]} 9... Be5 {[%clk
+0:08:56.9]} 10. Qd2 {[%clk 0:08:53.7]} 10... O-O {[%clk 0:08:41.9]} 11. Bc4
+{[%clk 0:08:43.5]} 11... d6 {[%clk 0:08:22.3]} 12. Nd5 $4 {[%clk
+0:08:36.7][%c_effect
+d5;square;d5;type;Blunder;size;100%25;animated;false;persistent;true]} 12...
+Nxd5 $1 {[%clk 0:08:19][%c_effect
+d5;square;d5;type;GreatFind;size;100%25;animated;true;persistent;true]} 13. exd5
+{[%clk 0:08:34.7]} 13... f5 {[%clk 0:08:00.2]} 14. f4 {[%clk 0:08:20]} 14... Bd4
+{[%clk 0:07:49.2][%c_effect
+d4;square;d4;type;Miss;size;100%25;animated;false;persistent;true]} 15. Bf2 $4
+{[%clk 0:08:04.5][%c_effect
+f2;square;f2;type;Blunder;size;100%25;animated;false;persistent;true]} 15...
+Bxa1 $1 {[%clk 0:07:41.2][%c_effect
+a1;square;a1;type;GreatFind;size;100%25;animated;true;persistent;true]} 16. O-O
+{[%clk 0:07:54.8]} 16... Bf6 {[%clk 0:07:29.8]} 17. Re1 {[%clk 0:07:39.2]} 17...
+Bd7 {[%clk 0:07:26.6]} 18. Re3 {[%clk 0:07:30]} 18... h5 {[%clk 0:07:13.6]} 19.
+h3 {[%clk 0:07:16.5]} 19... a5 {[%clk 0:06:59.1]} 20. Rg3 {[%clk 0:06:39.3]}
+20... Rad8 {[%clk 0:06:48.7]} 21. Re3 {[%clk 0:06:28.8]} 21... g5 {[%clk
+0:06:34.8]} 22. fxg5 {[%clk 0:06:21.1]} 22... Bxg5 {[%clk 0:06:33.4]} 23. Rg3
+{[%clk 0:06:12.1]} 23... Qb4 {[%clk 0:06:07.9]} 24. Qe2 {[%clk 0:05:50.8]} 24...
+Rde8 {[%clk 0:06:01]} 25. Qxh5 {[%clk 0:05:39.9]} 25... b6 {[%clk 0:05:32.9]}
+26. Qxg5+ {[%clk 0:05:36.3]} 26... Kh7 {[%clk 0:05:26.3]} 27. Qh5# {[%clk
+0:05:30.1][%c_effect
+g1;square;g1;type;Winner;animated;true,h7;square;h7;type;CheckmateBlack;animated;true]}
+1-0
