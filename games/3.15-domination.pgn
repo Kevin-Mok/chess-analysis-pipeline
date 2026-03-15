@@ -1,0 +1,76 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.03.15"]
+[Round "-"]
+[White "creppyG"]
+[Black "SoloPistol"]
+[Result "0-1"]
+[CurrentPosition "q5k1/1r3p1p/K4bp1/8/1p6/8/8/2q5 w - - 2 57"]
+[Timezone "UTC"]
+[ECO "D02"]
+[ECOUrl "https://www.chess.com/openings/Queens-Pawn-Opening-Zukertort-Chigorin-Variation"]
+[UTCDate "2026.03.15"]
+[UTCTime "21:43:32"]
+[WhiteElo "386"]
+[BlackElo "422"]
+[TimeControl "600"]
+[Termination "SoloPistol won by checkmate"]
+[StartTime "21:43:32"]
+[EndDate "2026.03.15"]
+[EndTime "21:54:12"]
+[Link "https://www.chess.com/analysis/game/live/165996433052/analysis"]
+[WhiteUrl "https://images.chesscomfiles.com/uploads/v1/user/146943867.083697a8.50x50o.c11605df9353.jpg"]
+[WhiteCountry "27"]
+[WhiteTitle ""]
+[BlackUrl "https://images.chesscomfiles.com/uploads/v1/user/530287979.a9a8a530.50x50o.fb8c76af6660.jpg"]
+[BlackCountry "3"]
+[BlackTitle ""]
+
+1. d4 {[%clk 0:09:52.2]} 1... d5 {[%clk 0:09:54.8]} 2. Nf3 {[%clk 0:09:48.9]}
+2... Nc6 {[%clk 0:09:41.3]} 3. c3 {[%clk 0:09:45.3]} 3... e6 {[%clk 0:09:21.3]}
+4. e3 {[%clk 0:09:42.1]} 4... Bd6 {[%clk 0:09:08.8]} 5. Bb5 {[%clk 0:09:30.8]}
+5... a6 {[%clk 0:08:50.8]} 6. Bd3 {[%clk 0:09:29.6]} 6... Nf6 {[%clk 0:08:38.7]}
+7. h3 {[%clk 0:09:21.1]} 7... O-O {[%clk 0:08:34.3]} 8. O-O {[%clk 0:09:18.7]}
+8... e5 {[%clk 0:08:09.1]} 9. e4 $4 {[%clk 0:09:06.1][%c_effect
+e4;square;e4;type;Blunder;persistent;true]} 9... dxe4 $1 {[%clk
+0:08:02.4][%c_effect e4;square;e4;type;GreatFind;persistent;true]} 10. Bxe4 $6
+{[%clk 0:08:51.9][%c_effect e4;square;e4;type;Inaccuracy;persistent;true]} 10...
+Nxe4 {[%clk 0:07:50.4]} 11. dxe5 {[%clk 0:08:34.7]} 11... Nxe5 {[%clk
+0:07:37.3]} 12. Nxe5 {[%clk 0:08:31.6]} 12... Bxe5 {[%clk 0:07:34.6]} 13. Qxd8
+{[%clk 0:08:25.6]} 13... Rxd8 {[%clk 0:07:30.1]} 14. f4 {[%clk 0:08:20.1]} 14...
+Bd6 {[%clk 0:07:15.7]} 15. c4 {[%clk 0:08:14.6]} 15... c5 {[%clk 0:06:54.9]} 16.
+Nc3 {[%clk 0:08:08.7]} 16... Nxc3 {[%clk 0:06:51]} 17. bxc3 {[%clk 0:08:07.9]}
+17... Bf5 {[%clk 0:06:39.2]} 18. g4 {[%clk 0:08:05.3]} 18... Bd3 {[%clk
+0:06:19.7]} 19. Rd1 {[%clk 0:08:00.2]} 19... Bxc4 {[%clk 0:06:07.8]} 20. f5
+{[%clk 0:07:53.9]} 20... b5 {[%clk 0:05:53.8]} 21. Bf4 $6 {[%clk
+0:07:49.6][%c_effect f4;square;f4;type;Inaccuracy;persistent;true]} 21... Bxf4
+{[%clk 0:05:50.3]} 22. Rxd8+ {[%clk 0:07:48.2]} 22... Rxd8 {[%clk 0:05:48.4]}
+23. Rf1 {[%clk 0:07:42.9]} 23... Be3+ {[%clk 0:05:41.6]} 24. Kg2 {[%clk
+0:07:38.6]} 24... Bxf1+ {[%clk 0:05:40]} 25. Kxf1 {[%clk 0:07:37.7]} 25... Rd2
+{[%clk 0:05:29.5]} 26. Ke1 {[%clk 0:07:30.2]} 26... Rxa2 {[%clk 0:05:25.2]} 27.
+g5 $6 {[%clk 0:07:21.8][%c_effect g5;square;g5;type;Inaccuracy;persistent;true]}
+27... g6 {[%clk 0:05:22.2]} 28. f6 {[%clk 0:07:19.9]} 28... Rh2 {[%clk
+0:05:09.8]} 29. h4 {[%clk 0:07:15.8]} 29... Rxh4 {[%clk 0:05:07.7]} 30. c4
+{[%clk 0:07:15]} 30... Rxc4 {[%clk 0:05:06.1]} 31. Ke2 {[%clk 0:07:13.2]} 31...
+Bxg5 {[%clk 0:05:02.4]} 32. Kf3 {[%clk 0:07:04.7]} 32... Bxf6 {[%clk 0:05:00.5]}
+33. Ke3 {[%clk 0:07:03.8]} 33... a5 {[%clk 0:04:58.5]} 34. Kd3 {[%clk
+0:07:02.5]} 34... Rh4 {[%clk 0:04:57]} 35. Ke3 {[%clk 0:07:01.6]} 35... a4
+{[%clk 0:04:55.7]} 36. Kf3 {[%clk 0:06:56.6]} 36... a3 {[%clk 0:04:54.6]} 37.
+Kg3 {[%clk 0:06:55.5]} 37... Ra4 {[%clk 0:04:53]} 38. Kf3 {[%clk 0:06:54.3]}
+38... a2 {[%clk 0:04:51.2]} 39. Ke2 {[%clk 0:06:52.3]} 39... a1=Q {[%clk
+0:04:49.8]} 40. Kd3 {[%clk 0:06:51]} 40... Qa3+ {[%clk 0:04:47.9]} 41. Kc2
+{[%clk 0:06:49.8]} 41... Qa2+ {[%clk 0:04:42.4]} 42. Kd3 {[%clk 0:06:48.6]}
+42... Qa3+ {[%clk 0:04:40.3]} 43. Kc2 {[%clk 0:06:47.8]} 43... Qa1 {[%clk
+0:04:36.1]} 44. Kb3 $6 {[%clk 0:06:46.4][%c_effect
+b3;square;b3;type;Inaccuracy;persistent;true]} 44... Rh4 $9 {[%clk 0:04:32.9]}
+45. Kc2 {[%clk 0:06:44.2]} 45... Qe1 {[%clk 0:04:29.7]} 46. Kb3 {[%clk
+0:06:43.2]} 46... Rd4 {[%clk 0:04:27.9]} 47. Kc2 {[%clk 0:06:41.9]} 47... Qe8
+{[%clk 0:04:23]} 48. Kc3 {[%clk 0:06:40.8]} 48... Rd7+ {[%clk 0:04:20.3]} 49.
+Kb3 {[%clk 0:06:40]} 49... c4+ {[%clk 0:04:18.2]} 50. Kb4 {[%clk 0:06:13.9]}
+50... Rb7 {[%clk 0:04:10.5]} 51. Kc5 {[%clk 0:05:58.6]} 51... Qc8+ {[%clk
+0:04:07.6]} 52. Kb4 {[%clk 0:05:53.7]} 52... c3 {[%clk 0:04:06.2]} 53. Kb3
+{[%clk 0:05:48.5]} 53... c2 {[%clk 0:04:04.7]} 54. Kb4 {[%clk 0:05:45.4]} 54...
+c1=Q {[%clk 0:04:03.1]} 55. Ka5 {[%clk 0:05:42.9]} 55... b4 {[%clk 0:03:57.6]}
+56. Ka6 {[%clk 0:05:40.4]} 56... Qa8# {[%clk 0:03:54.5][%c_effect
+g8;square;g8;type;Winner;animated;true,a6;square;a6;type;CheckmateWhite;animated;true]}
+0-1
