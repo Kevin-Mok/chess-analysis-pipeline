@@ -147,7 +147,7 @@ Current win artifacts are highlighted from tracked PGNs plus the `## How The Gam
 - 34-move mate vs `rrr3009` on Lichess, where `4. Qxh8` grabbed the rook early but the attack still finished with `34...Qb4#`.
 - 45-move mate vs `jinkry6` on Chess.com, where `44...Kb6` allowed `45. Qb8#` immediately.
 - 53-move passed-pawn mate vs `Ethagain` on Chess.com, where `52...Ka5` allowed `53. Ra7#` right after the `b`-pawn promoted on `52. b8=Q`.
-- 20-move blitz mate as Black vs `Kyonorz` on Chess.com, where `20. Rf3` allowed `20...Qg2#` immediately and the bishop on `h3` sealed the mating net.
+- 20-move mate as Black vs `Kyonorz` on Chess.com, finished after `1:35.3` of my clock, where `20. Rf3` allowed `20...Qg2#` immediately and the bishop on `h3` sealed the mating net.
 
 ## Highlight Games
 | Date | Opponent | Platform | Result | Game Link | Why it matters |
@@ -165,7 +165,7 @@ Current win artifacts are highlighted from tracked PGNs plus the `## How The Gam
 | 2026-03-22 | rrr3009 | Lichess | Win (Black, 0-1) | [Lichess game](https://lichess.org/i19C7n9W) | After `4. Qxh8` grabbed the rook early, the attack still converted with `34...Qb4#` on move 34. |
 | 2026-03-28 | jinkry6 | Chess.com | Win (White, 1-0) | [Chess.com game](https://www.chess.com/game/live/166542891282?move=0) | 45-move mate where `44...Kb6` allowed `45. Qb8#` immediately. |
 | 2026-03-28 | Ethagain | Chess.com | Win (White, 1-0) | [Chess.com game](https://www.chess.com/game/live/166559236480) | Passed-pawn conversion that promoted on `52. b8=Q` and finished with `53. Ra7#`. |
-| 2026-03-30 | Kyonorz | Chess.com | Win (Black, 0-1) | [Chess.com analysis](https://www.chess.com/analysis/game/live/166644955926/analysis?move=39) | 20-move blitz mate where `20. Rf3` allowed `20...Qg2#`, with the bishop on `h3` sealing the net. |
+| 2026-03-30 | Kyonorz | Chess.com | Win (Black, 0-1) | [Chess.com analysis](https://www.chess.com/analysis/game/live/166644955926/analysis?move=39) | 20-move mate finished after `1:35.3` of my clock, where `20. Rf3` allowed `20...Qg2#`, with the bishop on `h3` sealing the net. |
 
 ## Key Moves and Turning Points
 - [**15. Qxe7#** (Chess.com analysis)](https://www.chess.com/analysis/game/live/165298129986/analysis?move=29): immediate mate after `14...Nxf1`.
@@ -181,7 +181,7 @@ Current win artifacts are highlighted from tracked PGNs plus the `## How The Gam
 - [**34...Qb4#** (Lichess)](https://lichess.org/i19C7n9W#68): 34-move mate against `rrr3009` after the early rook grab on `4. Qxh8`.
 - [**45. Qb8#** (Chess.com game)](https://www.chess.com/game/live/166542891282?move=0): immediate mate against `jinkry6` after `44...Kb6`.
 - [**53. Ra7#** (Chess.com game)](https://www.chess.com/game/live/166559236480): passed-pawn conversion against `Ethagain`, with `52. b8=Q` setting up the final rook mate.
-- [**20...Qg2#** (Chess.com analysis)](https://www.chess.com/analysis/game/live/166644955926/analysis?move=39): 20-move blitz mate against `Kyonorz`, with the queen protected by the bishop on `h3`.
+- [**20...Qg2#** (Chess.com analysis)](https://www.chess.com/analysis/game/live/166644955926/analysis?move=39): 20-move mate against `Kyonorz`, finished after `1:35.3` of my clock, with the queen protected by the bishop on `h3`.
 
 ## High Win% Comeback Evidence
 Current `analysis/*.md` artifacts include a high-confidence conversion sequence in `analysis/2026-03-03-comeback-vs-gaju33333.md` (SoloPistol POV).
@@ -249,12 +249,12 @@ Visual highlights:
 
 <figure>
   <img src="media/2026-03-03-lichess-comeback.gif" alt="Lichess comeback highlight" width="420">
-  <figcaption><em>March 3, 2026 vs <code>gaju33333</code> on Lichess: comeback conversion that climbed from <code>0.73</code> expected score at <code>28...Qxd8</code> to <code>1.00</code> by <code>34...Qxc7</code>, after which White resigned.</em></figcaption>
+  <figcaption><em>March 3, 2026 vs <code>gaju33333</code> on Lichess: long comeback from a lost middlegame, eventually recovering from <code>0%</code> expected score after <code>13...d5</code> to <code>100%</code> by <code>34...Qxc7</code>, after which White resigned.</em></figcaption>
 </figure>
 
 <figure>
-  <img src="media/3.30-blitz-20-move-mate.gif" alt="March 30 blitz mate highlight" width="420">
-  <figcaption><em>March 30, 2026 vs <code>Kyonorz</code> on Chess.com: 20-move blitz mate where <code>20. Rf3</code> allowed <code>20...Qg2#</code>, with the bishop on <code>h3</code> protecting the mating queen.</em></figcaption>
+  <img src="media/3.30-blitz-20-move-mate.gif" alt="March 30 Kyonorz mate highlight" width="420">
+  <figcaption><em>March 30, 2026 vs <code>Kyonorz</code> on Chess.com: 20-move mate finished after <code>1:35.3</code> of my clock, where <code>20. Rf3</code> allowed <code>20...Qg2#</code>, with the bishop on <code>h3</code> protecting the mating queen.</em></figcaption>
 </figure>
 
 ## Next goals
