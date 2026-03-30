@@ -3,46 +3,46 @@
 Purpose: maintain five recruiter-focused GitHub repository ideas that extend this local-first chess analysis stack.
 
 ## 1) Title
-`ai-chess-finish-pattern-library`
+`ai-chess-tactic-corpus-builder`
 
 About:
-Local-first ai-chess-finish-dataset that tags mates, resignations, and conversion motifs from PGNs for search, review, and training.
+ai-chess-tactic-extraction pipeline that mines PGNs for forcing lines, labels motifs, and exports training corpora with engine-backed metadata.
 
 SWE recruiter signal:
 Shows dataset design, extraction pipelines, and evidence-backed labeling discipline.
 
 ## 2) Title
-`ai-chess-report-regression-lab`
+`ai-chess-local-eval-dashboard`
 
 About:
-ai-chess-analysis-pipeline regression lab that snapshots markdown reports, detects drift, and explains engine or prompt changes before release.
+local-first ai-chess-eval-observability app that compares Stockfish, Lc0, and rewrite outputs across games and regression snapshots.
 
 SWE recruiter signal:
-Demonstrates test infrastructure, reproducibility controls, and output-diff tooling.
+Demonstrates observability design, multi-engine comparison, and regression-tracking discipline.
 
 ## 3) Title
-`ai-chess-local-coach-cli`
+`ai-chess-mate-media-factory`
 
 About:
-Offline-friendly ai-chess-coaching-cli that turns PGNs into training notes with local models, strict schemas, and deterministic fallback text.
+ai-chess-media-automation toolkit that turns PGN mates into GIFs, markdown reports, and shareable study snippets from one CLI.
 
 SWE recruiter signal:
-Highlights CLI product design, AI integration discipline, and graceful degradation.
+Highlights content-pipeline automation, CLI product design, and artifact generation discipline.
 
 ## 4) Title
-`ai-chess-engine-triage-board`
+`ai-chess-reasoning-benchmark`
 
 About:
-ai-chess-engine-observability workspace for Stockfish and Lc0 disagreement triage, review queues, and decision-quality evidence bundles.
+ai-chess-reasoning-benchmark harness for testing local and hosted models on move explanations against engine-backed answer keys.
 
 SWE recruiter signal:
-Shows observability thinking, ranking workflows, and human-in-the-loop review design.
+Shows evaluation design, benchmarking rigor, and structured AI quality measurement.
 
 ## 5) Title
-`ai-chess-study-publisher`
+`ai-chess-opening-drift-tracker`
 
 About:
-ai-chess-study-automation pipeline that converts PGNs and analyzer output into study chapters, media snippets, and recruiter-friendly summaries.
+ai-chess-opening-prep tracker that detects recurring repertoire drift from PGNs and generates local-first repair drills and reports.
 
 SWE recruiter signal:
-Demonstrates content-pipeline automation, transformation workflows, and polished developer UX.
+Demonstrates longitudinal analysis, workflow automation, and training-product thinking.
